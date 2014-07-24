@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/base/jquery.ui.all.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap3-dialog/css/bootstrap-dialog.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/css/datepicker3.css">
+    <link rel="stylesheet" href="calendar.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h3>Hello!</h3>
+    <div id="x">
+    <form id="enterZip">
+        <span>Enter a Zip Code: </span>
+        <input type="text" id="zip">
+        <submit id="getEvents" class="btn btn-primary">Get events!</submit>
+    </form>
+
+    <div class="col-xs-2" style="display: inline-block;">
+        <select class="form-control" id="zips"></select>
+    </div>
+    </div>
+
+    <div id="theCalendar" class="datepicker"></div>
+
+    <div id="events"></div>
+
+    <button id="addItemButton">Add an item</button>
+
+   <!-- <div id="addItemDialog">
+        <input type="text" id="newItem">
+    </div>-->
+
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">New Event</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="newItem">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="save" class="btn btn-primary" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+    <script src="../bower_components/jquery-ui/ui/jquery-ui.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-timezone.min.js"></script>
+    <script src="js/moment-timezone-data.js"></script>
+    <script src="../bower_components/bootstrap3-dialog/js/bootstrap-dialog.js"></script>
+    <script src="../bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

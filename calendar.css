@@ -1,0 +1,17 @@
+.event{
+    font-size: 25px;
+}
+
+#enterZip{
+    display: inline-block;
+    float: left;
+}
+
+body{
+    margin-left: 25px;
+}
+
+#theCalendar{
+    clear: both;
+}
+
